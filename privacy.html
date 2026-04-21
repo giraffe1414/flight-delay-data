@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Delay Predictor — Privacy Policy</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+    h1 { font-size: 28px; margin-bottom: 8px; }
+    h2 { font-size: 18px; margin-top: 32px; }
+    .updated { color: #666; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Flight Delay Predictor — Privacy Policy</h1>
+  <p class="updated">Last updated: April 21, 2026</p>
+
+  <h2>Summary</h2>
+  <p>Flight Delay Predictor does not collect, store, transmit, or sell any personal information about you. The extension runs entirely in your browser and never sends your data anywhere.</p>
+
+  <h2>What the extension does</h2>
+  <p>When you visit Google Flights, the extension reads the airline names and route information that are already displayed on the page in order to overlay reliability statistics on each flight result. This information stays on your device and is never transmitted.</p>
+
+  <h2>Data the extension fetches</h2>
+  <p>The extension fetches a single public JSON file from <code>https://giraffe1414.github.io/flight-delay-data/data.json</code>. This file contains pre-computed flight delay statistics from publicly available US Department of Transportation Bureau of Transportation Statistics (BTS) data. No information about you or your activity is sent in this request beyond what any normal web browser request includes (your IP address, which is required to deliver any web response).</p>
+
+  <h2>Local storage</h2>
+  <p>The extension uses your browser's local storage to cache the fetched statistics file for 24 hours, so it does not need to refetch the same data on every page load. This cache contains only public flight statistics — no personal information.</p>
+
+  <h2>Third-party services</h2>
+  <p>The extension makes no calls to any third-party analytics, advertising, or tracking services.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>activeTab</strong> — Required to read the flight results displayed on Google Flights pages.</li>
+    <li><strong>storage</strong> — Required to cache the statistics file in your browser for 24 hours.</li>
+    <li><strong>host_permissions for giraffe1414.github.io</strong> — Required to fetch the public statistics file.</li>
+  </ul>
+
+  <h2>Data source</h2>
+  <p>All flight statistics are derived from publicly available US DOT Bureau of Transportation Statistics data: <a href="https://transtats.bts.gov/PREZIP/">https://transtats.bts.gov/PREZIP/</a></p>
+
+  <h2>Contact</h2>
+  <p>Questions or concerns? Open an issue on the project repository at <a href="https://github.com/giraffe1414/flight-delay-data">https://github.com/giraffe1414/flight-delay-data</a>.</p>
+</body>
+</html>
