@@ -21,7 +21,7 @@
   <p>When you visit Google Flights, the extension reads the airline names and route information that are already displayed on the page in order to overlay reliability statistics on each flight result. This information stays on your device and is never transmitted.</p>
 
   <h2>Data the extension fetches</h2>
-  <p>The extension fetches a single public JSON file from <code>https://giraffe1414.github.io/flight-delay-data/data.json</code>. This file contains pre-computed flight delay statistics from publicly available US Department of Transportation Bureau of Transportation Statistics (BTS) data. No information about you or your activity is sent in this request beyond what any normal web browser request includes (your IP address, which is required to deliver any web response).</p>
+  <p>The extension fetches a single public JSON file from <code>https://casefosterai.github.io/flight-delay-data/data.json</code>. This file contains pre-computed flight delay statistics from publicly available US Department of Transportation Bureau of Transportation Statistics (BTS) data. No information about you or your activity is sent in this request beyond what any normal web browser request includes (your IP address, which is required to deliver any web response).</p>
 
   <h2>Local storage</h2>
   <p>The extension uses your browser's local storage to cache the fetched statistics file for 24 hours, so it does not need to refetch the same data on every page load. This cache contains only public flight statistics — no personal information.</p>
@@ -33,13 +33,13 @@
   <ul>
     <li><strong>activeTab</strong> — Required to read the flight results displayed on Google Flights pages.</li>
     <li><strong>storage</strong> — Required to cache the statistics file in your browser for 24 hours.</li>
-    <li><strong>host_permissions for giraffe1414.github.io</strong> — Required to fetch the public statistics file.</li>
+    <li><strong>host_permissions for casefosterai.github.io</strong> — Required to fetch the public statistics file.</li>
   </ul>
 
   <h2>Data source</h2>
   <p>All flight statistics are derived from publicly available US DOT Bureau of Transportation Statistics data: <a href="https://transtats.bts.gov/PREZIP/">https://transtats.bts.gov/PREZIP/</a></p>
 
   <h2>Contact</h2>
-  <p>Questions or concerns? Open an issue on the project repository at <a href="https://github.com/giraffe1414/flight-delay-data">https://github.com/giraffe1414/flight-delay-data</a>.</p>
+  <p>Questions or concerns? Open an issue on the project repository at <a href="https://github.com/casefosterai/flight-delay-data">https://github.com/casefosterai/flight-delay-data</a>.</p>
 </body>
 </html>
